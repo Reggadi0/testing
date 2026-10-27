@@ -2,37 +2,43 @@ const books = [
   { 
     title: "البخلاء للجاحظ", 
     cat: "أدب", 
-    desc: "من مكتبة محمد رگادي - تحميل مباشر", 
-    link: "https://www.hindawi.org/books/30055144/download.pdf" 
+    desc: "من مكتبة محمد رگادي", 
+    cover: "https://www.hindawi.org/books/30055144/cover.jpg",
+    link: "https://www.hindawi.org/books/30055144.pdf" 
   },
   { 
     title: "كليلة ودمنة", 
     cat: "أدب", 
-    desc: "ابن المقفع - تحميل مباشر", 
-    link: "https://www.hindawi.org/books/32151991/download.pdf" 
+    desc: "ابن المقفع", 
+    cover: "https://www.hindawi.org/books/32151991/cover.jpg",
+    link: "https://www.hindawi.org/books/32151991.pdf" 
   },
   { 
     title: "طوق الحمامة", 
     cat: "أدب", 
     desc: "ابن حزم الأندلسي", 
-    link: "https://www.hindawi.org/books/73484493/download.pdf" 
+    cover: "https://www.hindawi.org/books/73484493/cover.jpg",
+    link: "https://www.hindawi.org/books/73484493.pdf" 
   },
   { 
-    title: "مقدمة ابن خلدون", 
-    cat: "تاريخ", 
-    desc: "أشهر مقدمة في التاريخ", 
-    link: "https://www.hindawi.org/books/68396270/download.pdf" 
+    title: "رسالة الغفران", 
+    cat: "أدب", 
+    desc: "أبو العلاء المعري", 
+    cover: "https://www.hindawi.org/books/62576857/cover.jpg",
+    link: "https://www.hindawi.org/books/62576857.pdf" 
   },
   { 
     title: "فن الحرب", 
     cat: "فكر", 
     desc: "سون تزو", 
-    link: "https://www.hindawi.org/books/62560258/download.pdf" 
+    cover: "https://www.hindawi.org/books/62560258/cover.jpg",
+    link: "https://www.hindawi.org/books/62560258.pdf" 
   },
   { 
     title: "الأمير", 
     cat: "سياسة", 
     desc: "ميكافيلي", 
-    link: "https://www.hindawi.org/books/62612126/download.pdf" 
+    cover: "https://www.hindawi.org/books/62612126/cover.jpg",
+    link: "https://www.hindawi.org/books/62612126.pdf" 
   }
 ];
