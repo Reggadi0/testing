@@ -3,40 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مكتبة محمد رگادي</title>
+<title>مكتبة محمد رگادي - تحميل مباشر</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
   <h1>📚 مكتبة محمد رگادي</h1>
   <p>تحميل مباشر من مكتبتي - بدون إعلانات</p>
-  <input type="text" id="search" placeholder="ابحث..." onkeyup="searchBooks()">
+  <input type="text" id="search" placeholder="ابحث عن كتاب..." onkeyup="searchBooks()">
 </header>
+
 <main id="books-container"></main>
+
 <footer>
-  <p>جميع الكتب من إعداد <b>محمد رگادي</b></p>
-  <p>التحميل مباشر وسريع من سيرفر المكتبة</p>
+  <p>جميع الكتب من إعداد <b>محمد رگادي</b> ❤️</p>
+  <p>مكتبة حرة 100% - تحميل مباشر وسريع</p>
 </footer>
+
 <script src="books.js"></script>
 <script>
 const container = document.getElementById('books-container');
+
 function render(list){
-  container.innerHTML='';
-  list.forEach(b=>{
-    container.innerHTML+=`
+  container.innerHTML = '';
+  list.forEach(b => {
+    container.innerHTML += `
     <div class="book-card">
+      <img src="${b.cover}" alt="${b.title}" class="book-cover" loading="lazy" onerror="this.src='https://via.placeholder.com/300x400?text=${b.title}'">
       <h3>${b.title}</h3>
       <span class="cat">${b.cat}</span>
       <p>${b.desc}</p>
-      <a href="${b.link}" download="${b.title}.pdf" class="btn">تحميل مباشر</a>
+      <a href="${b.link}" download class="btn">تحميل مباشر</a>
     </div>`;
   });
 }
+
 render(books);
+
 function searchBooks(){
-  let q=document.getElementById('search').value.toLowerCase();
-  render(books.filter(b=>b.title.toLowerCase().includes(q)));
+  let q = document.getElementById('search').value.toLowerCase();
+  let filtered = books.filter(b => b.title.toLowerCase().includes(q) || b.cat.toLowerCase().includes(q));
+  render(filtered);
 }
 </script>
+
 </body>
 </html>
