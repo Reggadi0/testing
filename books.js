@@ -39,6 +39,6 @@ const books = [
     cat: "سياسة", 
     desc: "ميكافيلي", 
     cover: "https://www.hindawi.org/books/62612126/cover.jpg",
-    link: "https://www.hindawi.org/books/62612126.pdf" 
+    link: "https://downloads.hindawi.org/books/58591507.pdf" 
   }
 ];
